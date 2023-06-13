@@ -1,2 +1,4 @@
-export const ADD = 'contacts/addedContact';
-export const DELETE = 'contacts/deletedContact';
+const prefix = 'contacts/';
+
+export const ADD = `${prefix}addedContact`;
+export const DELETE = `${prefix}deletedContact`;

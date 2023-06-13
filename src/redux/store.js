@@ -13,6 +13,7 @@ const enhancer = devToolsEnhancer();
 
 export const store = createStore(rootReducer, enhancer);
 
+// write changes to LocalStorage
 store.subscribe(() => {
   localStorage.save(store.getState().contacts);
 });
